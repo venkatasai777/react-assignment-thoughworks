@@ -1,0 +1,63 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  scrollbar-width: 0px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 32px;
+  color: blue;
+}
+.container h1 {
+  margin-bottom: 24px;
+}
+.container input {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  height: 35px;
+}
+.mealsLists {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mealsLists li {
+  width: 150px;
+  height: 300px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  cursor: pointer;
+}
+.mealsLists li img {
+  border-radius: 12px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.mealsLists li p {
+  color: red;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+mealsLists li:hover {
+  transition: all ease-in-out 0.2s;
+}
